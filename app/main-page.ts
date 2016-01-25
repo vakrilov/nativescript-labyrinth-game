@@ -30,20 +30,11 @@ export function pageLoaded(args) {
         meta: true
     }));
     
-    world.add(Physics.body('rectangle', { treatment: 'static',
-        x: 0,
-        y: 150,
-        width: 20,
-        height: 300,
-        styles: { color: "orange" }
-    }));
-    
-    
-    addWall(world, 0, 150, 20, 300);
-    addWall(world, 300, 150, 20, 300);
-    addWall(world, 150, 0, 300, 20);
-    addWall(world, 150, 300, 300, 20);
-    addWall(world, 150, 250, 10, 200); // Middle
+    addWall(world, 5, 150, 10, 300);
+    addWall(world, 295, 150, 10, 300);
+    addWall(world, 150, 5, 300, 10);
+    addWall(world, 150, 295, 300, 10);
+    addWall(world, 150, 225, 10, 150); // Middle
     
     addTarget(world, 225, 225);
     addBall(world, 50, 250);
@@ -75,7 +66,12 @@ export function pageLoaded(args) {
     ]);
 
     setTimeout(function() {
-        accService.startAccelometerUpdates(gravityUpdate)
+        try {
+            accService.startAccelometerUpdates(gravityUpdate);
+        }
+        catch (ex) {
+            alert(ex.message)
+        }
     }, 100);
 
 
