@@ -1,0 +1,22 @@
+﻿#container {
+    width: 300;
+    height: 300;
+    background-color: lightgreen;
+}
+
+#meta {
+    font-family: monospace;
+    font-size: 10;
+    horizontal-align: right;
+    vertical-align: top;
+    margin: 5;
+}
+
+#win {
+    visibility: collapse;
+    font-size: 42;
+    font-weight: bold;
+    color: crimson;
+    horizontal-align: center;
+    vertical-align: center;
+}

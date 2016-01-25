@@ -1,0 +1,17 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.nativescriptlabyrinth",
+    "tns-android": {
+      "version": "1.5.1"
+    }
+  },
+  "dependencies": {
+    "native-script-accelerometer": "^0.2.1",
+    "nativescript-physics-js": "^1.0.5",
+    "tns-core-modules": "1.5.1"
+  },
+  "devDependencies": {
+    "nativescript-dev-typescript": "^0.2.3",
+    "typescript": "^1.7.5"
+  }
+}

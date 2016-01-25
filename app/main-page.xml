@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" actionBarHidden="true">
+    <GridLayout>
+        <!-- Definte the container for the phisics scene -->
+        <GridLayout id="container"></GridLayout>
+        
+        <!-- Label for meta info is not requiered -->
+        <Label id="meta"/>
+        <Label id="win" text="You Win!!!"/>
+    </GridLayout>
+</Page>
