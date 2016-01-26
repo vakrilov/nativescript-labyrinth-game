@@ -4,7 +4,7 @@ import accService = require("native-script-accelerometer");
 import { Page } from "ui";
 
 
-const gravity_scale = 0.003 / 9.81;
+const gravity_scale = 0.003;
 
 var init = false;
 var gameEnded = false;
