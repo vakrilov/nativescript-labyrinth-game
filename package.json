@@ -9,7 +9,7 @@
     }
   },
   "dependencies": {
-    "native-script-accelerometer": "^0.2.2",
+    "nativescript-accelerometer": "^0.2.3",
     "nativescript-physics-js": "^1.0.5",
     "tns-core-modules": "1.5.1"
   },

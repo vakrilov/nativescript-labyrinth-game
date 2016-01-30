@@ -1,6 +1,6 @@
 import Physics = require("nativescript-physics-js");
 import application = require('application');
-import accService = require("native-script-accelerometer");
+import accService = require("nativescript-accelerometer");
 import { Page } from "ui";
 
 
