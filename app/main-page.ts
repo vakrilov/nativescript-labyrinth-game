@@ -67,7 +67,7 @@ export function pageLoaded(args) {
 
     setTimeout(function() {
         try {
-            accService.startAccelometerUpdates(gravityUpdate);
+            accService.startAccelerometerUpdates(gravityUpdate);
         }
         catch (ex) {
             alert(ex.message)
@@ -127,7 +127,7 @@ function win(world){
     if(!gameEnded){
         gameEnded = true;
         world.pause();
-        accService.stopAccelometerUpdates();
+        accService.stopAccelerometerUpdates();
         page.getViewById("win").visibility = "visible";
     }
 }
